@@ -72,11 +72,18 @@ $(document).ready(function () {
         $('.all-skills').append('<div class="add-border"><span></span><h2>New Skill</h2><span></span></div><div class="new-skills"><label>Skill</label> <input type="text" name="skill" class="form-control">          </div>');
 
     });
+    // Add Reference block
+
+    $('#add-ref').on('click', function () {
+        $('.all-refs').append('<div class="add-border"><span></span><h2>New Reference</h2><span></span></div><div class="new-ref"><label>Job Position:</label>                  <input type="text" name="ref[]" class="form-control" placeholder="job position">          <label>Company Name:</label><input type="text" name="ref[]" class="form-control" placeholder="company name"><div class="form-row"><div class="col">                   <label>Pone No:</label><input type="text" placeholder="phone no" name="ref[]" class="form-control">              </div><div class="col"><label>Email:</label>                                 <input type="text" name="ref[]" placeholder="email" class="form-control"></div></div></div>');
+    });
+
+
 
     // Add socials block
 
     $('.add-socials').on('click', function () {
-        $('.all-socials').append('<div class="add-border"><span></span><h2>New social</h2><span></span></div><div class="new-socials"><label>Social Name</label> <input type="text" name="social" class="form-control">          <label>Social Link</label><input type="text" name="socials[]" class="form-control"> <label>Social icon image (16px*16px)</label><input type="file" name="socials[]" class="form-control" /></div>');
+        $('.all-socials').append('<div class="add-border"><span></span><h2>New ref</h2><span></span></div><div class="new-socials"><label>Social Name</label> <input type="text" name="social" class="form-control">          <label>Social Link</label><input type="text" name="socials[]" class="form-control"> <label>Social icon image (16px*16px)</label><input type="file" name="socials[]" class="form-control" /></div>');
 
     });
 

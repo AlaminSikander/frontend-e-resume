@@ -729,7 +729,7 @@ ol {
     color: #fff;
 }
 .dream-btn.green-btn {
-    background:rgb(62, 148, 228)
+    background:#F58714
 }
 .more-btn.pink {
     background: #F69;
@@ -770,13 +770,13 @@ ol {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    background-color: #f58814a9;
+    background-color: #F58714;
 }
 
 .header-area.sticky {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
-    background-color: #f588148a;
+    background-color: #f58814bb;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border-bottom: none;
 }
@@ -4374,6 +4374,7 @@ body.light-version {
 
 .block-container,
 .all-edus,
+.all-refs,
 .all-exps{
     border: 1px solid #eee;
     box-shadow: 0px 2px 27px 0px rgb(154 161 171 / 18%);
@@ -4447,6 +4448,7 @@ label{
         overflow: hidden;
         float: right;
         margin: 0px;
+        background-color: #F58714;
     }
     
     .add-blk .fa-plus{
@@ -4490,7 +4492,7 @@ label{
         display: block;
         border-radius:5px;
         border: none;
-        background-color: #007bff;
+        background-color: #F58714;
         color:#fff;
         font-size: 23px;
         padding: 11px 40px;
