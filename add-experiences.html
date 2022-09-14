@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from geeko.netlify.app/template-edit.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 04:08:17 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="">
@@ -40,7 +42,8 @@
                 <nav class="classy-navbar justify-content-between" id="dreamNav">
 
                     <!-- Logo -->
-                    <a class="nav-brand" href="index-2.html"><img src="img/core-img/logo-3.png" alt="logo"> CV Builder.</a>
+                    <a class="nav-brand" href="index3.html"><img src="img/core-img/logo-3.png" alt="logo"> CV
+                        Builder.</a>
 
                     <!-- Navbar Toggler -->
                     <div class="classy-navbar-toggler">
@@ -78,7 +81,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-12 col-md-7">
-                    
+
                     <div class="container">
 
                         <form method="post" action="#">
@@ -88,9 +91,11 @@
                                     <div class="all-exps">
                                         <div class="new-exp">
                                             <label>Job Title:</label>
-                                            <input type="text" name="exp[]" class="form-control" placeholder="Job tital">
+                                            <input type="text" name="exp[]" class="form-control"
+                                                placeholder="Job tital">
                                             <label>Company:</label>
-                                            <input type="text" name="exp[]" class="form-control" placeholder="Company name">
+                                            <input type="text" name="exp[]" class="form-control"
+                                                placeholder="Company name">
                                             <div class="form-row">
                                                 <div class="col">
                                                     <label>From year:</label>
@@ -101,8 +106,15 @@
                                                     <input type="month" name="exp[]" class="form-control">
                                                 </div>
                                             </div>
-                                            <label>Description (optional):</label>
-                                            <textarea name="exp[]" class="form-control"></textarea>
+                                            <div class="col-lg-12">
+                                                <label>Description (optional):</label>
+                                                <textarea id="myText" name="exp[]" class="form-control"></textarea>
+                                                <p class="limits" id="result"></p>
+                                                <p id="e-warning" class="limits" hidden>Max length of characters is 80.
+                                                </p>
+
+                                            </div>
+
                                         </div>
                                     </div>
                                     <div class="add-blk btn btn-info" id="add-exp">
@@ -112,15 +124,15 @@
                                 </div>
                             </div>
 
-                            
+
 
                             <hr class="mt-100">
                             <div class="row cols-2">
-                                <a href="add-education.html"  type="submit" class="btn-sub">Back</a>
-                                <a href="add-skiils.html"  type="submit" class="btn-sub">Next</a>
+                                <a href="add-education.html" type="submit" class="btn-sub">Back</a>
+                                <a href="add-skiils.html" type="submit" class="btn-sub">Next</a>
                             </div>
-                            
-                            
+
+
                         </form>
                     </div>
                 </div>
@@ -149,4 +161,5 @@
 
 
 <!-- Mirrored from geeko.netlify.app/template-edit.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 13 Sep 2022 04:08:18 GMT -->
+
 </html>

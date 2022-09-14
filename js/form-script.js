@@ -1,4 +1,9 @@
 /* global $, alert, console */
+
+
+
+
+
 $(document).ready(function () {
     'use strict';
     /*
@@ -53,10 +58,16 @@ $(document).ready(function () {
 
     });
 
+
+    
+
+
+
+
     // Add education block
 
     $('#add-edu').on('click', function () {
-        $('.all-edus').append('<div class="add-border"><span></span><h2>New education</h2><span></span></div><div class="new-edu"><label>Field of study:</label>                  <input type="text" name="edu[]" class="form-control" placeholder="Ex: Computer Science">          <label>Degree:</label><input type="text" name="edu[]" class="form-control" placeholder="Ex: Bachelor\'s"><label>School:</label><input type="text" name="edu[]" class="form-control" placeholder="Ex: al-albayt university"><div class="form-row"><div class="col">                   <label>From year:</label><input type="month" name="edu[]" class="form-control">              </div><div class="col"><label>To year (optional=present):</label>                                 <input type="month" name="edu[]" class="form-control"></div></div></div>');
+        $('.all-edus').append('<div class="add-border"><span></span><h2>New education</h2><span></span></div><div class="new-edu"><label>Field of study:</label>                  <input type="text" name="edu[]" class="form-control" placeholder="field of study">          <label>Degree:</label><select required name="class" class="form-control select"><option>Select one</option><option>S.S.C.</option><option>H.S.C.</option><option>Bachelor</option><option>Masters</option><option>PHD</option></select><label>Institute Name:</label><input type="text" name="edu[]" class="form-control" placeholder="institute name"><label>Result:</label><input type="text" name="edu[]" class="form-control" placeholder="result"><div class="form-row"><div class="col"><label>From year:</label><input type="month" name="edu[]" class="form-control">              </div><div class="col"><label>To year (optional=present):</label>                                 <input type="month" name="edu[]" class="form-control"></div></div></div>');
     });
 
 
@@ -69,7 +80,7 @@ $(document).ready(function () {
     // Add skills block
 
     $('.add-skills').on('click', function () {
-        $('.all-skills').append('<div class="add-border"><span></span><h2>New Skill</h2><span></span></div><div class="new-skills"><label>Skill</label> <input type="text" name="skill" class="form-control">          </div>');
+        $('.all-skills').append('<div class="add-border"><span></span><h2>New Skill</h2><span></span></div><div class="new-skills"><label>Skill</label> <select required name="class" class="form-control select"><option>Select one</option><option>Web analytics</option><option>SEO/SEM</option><option>HTML & CSS</option><option>Wordpress</option><option>Email marketing</option><option>Web scraping</option><option>Data visualization & pattern-finding through critical thinking</option><option>Search Engine and Keyword Optimization</option><option>Project/campaign management</option><option>Social media and mobile marketing </option><option>Paid social media advertisements</option><option>The 4 P-s of Marketing</option><option>Consumer Behavior Drivers</option><option>Brand management</option><option>Creativity</option><option>Copywriting</option><option>Copywriting</option><option>CMS Tools</option></select>          </div>');
 
     });
     // Add Reference block
@@ -93,6 +104,45 @@ $(document).ready(function () {
         $('.all-hoppies').append('<div class="add-border"><span></span><h2>New Hoppy</h2><span></span></div><div class="new-hoppies"> <label>Hoppy icon image (32px*32px)</label><input type="file" name="hoppies[]" class="form-control" /></div>');
 
     });
+
+    var myText = document.getElementById("myText");
+    var result = document.getElementById("result");
+    var ewarning = document.getElementById("e-warning");
+
+    var limit = 80;
+    result.textContent = 0 + "/" + limit;
+    
+    myText.addEventListener("input", function(){
+        var textLength = myText.value.length;
+        result.textContent = textLength + "/" + limit;
+    
+        if(textLength > limit){
+            myText.style.borderColor = "#ff2851";
+            result.style.color = "#ff0000";
+        }
+        else{
+            myText.style.borderColor = "#3c3939";
+            result.style.color = "#3c3939";
+        }
+    });
+
+    var myText = document.getElementById("myText");
+    var ewarning = document.getElementById("e-warning");
+    myText.addEventListener("input", checkCodeLength)
+
+    function checkCodeLength(){
+        var entereCodeLength = myText.value.length;
+        var maxLength = 80;
+
+        if (entereCodeLength > maxLength){
+            ewarning.hidden = false
+            myText.classList.add("error")
+            ewarning.style.color = "#ff0000";
+        } else{
+            ewarning.hidden = true
+            myText.classList.remove("error")
+        }
+    }
 
 
 });
