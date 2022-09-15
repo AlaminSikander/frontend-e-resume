@@ -4508,6 +4508,7 @@ label{
         color:#20bead;
         margin-right: 4px;
     }
+
     .add-blk span{
         float: right;
         margin: 2px 7px;
@@ -4538,7 +4539,7 @@ label{
     
     .btn-sub{
         position: relative;
-        margin: 37px auto;
+        margin: 0px auto;
         height: 50px;
         display: block;
         border-radius:8px;

@@ -2616,9 +2616,10 @@ fieldset:disabled a.btn {
 }
 
 .btn-info:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b
+    /* color: #fff; */
+    /* background-color: #20bead; */
+    border-color: #20bead;
+    box-shadow: 1px 1px 8px 2px #20beaeb2;
 }
 
 .btn-info.focus,
@@ -2803,7 +2804,7 @@ fieldset:disabled a.btn {
     color: rgb(32, 190, 173);
     background-color: transparent;
     background-image: none;
-    border-color: rgb(32, 190, 173)
+    border-color: #20bead
 }
 
 .btn-outline-primary:hover {
