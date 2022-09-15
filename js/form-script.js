@@ -1,44 +1,5 @@
 /* global $, alert, console */
 
-var myText = document.getElementById("myText");
-    var result = document.getElementById("result");
-    var ewarning = document.getElementById("e-warning");
-
-    var limit = 80;
-    result.textContent = 0 + "/" + limit;
-    
-    myText.addEventListener("input", function(){
-        var textLength = myText.value.length;
-        result.textContent = textLength + "/" + limit;
-    
-        if(textLength > limit){
-            myText.style.borderColor = "#ff2851";
-            result.style.color = "#ff0000";
-        }
-        else{
-            myText.style.borderColor = "#3c3939";
-            result.style.color = "#3c3939";
-        }
-    });
-
-    var myText = document.getElementById("myText");
-    var ewarning = document.getElementById("e-warning");
-    myText.addEventListener("input", checkCodeLength)
-
-    function checkCodeLength(){
-        var entereCodeLength = myText.value.length;
-        var maxLength = 80;
-
-        if (entereCodeLength > maxLength){
-            ewarning.hidden = false
-            myText.classList.add("error")
-            ewarning.style.color = "#ff0000";
-        } else{
-            ewarning.hidden = true
-            myText.classList.remove("error")
-        }
-    }
-
 
 
 $(document).ready(function () {
@@ -143,6 +104,45 @@ $(document).ready(function () {
     });
 
     
+    var myText = document.getElementById("myText");
+    var result = document.getElementById("result");
+    var ewarning = document.getElementById("e-warning");
+
+    var limit = 80;
+    result.textContent = 0 + "/" + limit;
+    
+    myText.addEventListener("input", function(){
+        var textLength = myText.value.length;
+        result.textContent = textLength + "/" + limit;
+    
+        if(textLength > limit){
+            myText.style.borderColor = "#ff2851";
+            result.style.color = "#ff0000";
+        }
+        else{
+            myText.style.borderColor = "#3c3939";
+            result.style.color = "#3c3939";
+        }
+    });
+
+    var myText = document.getElementById("myText");
+    var ewarning = document.getElementById("e-warning");
+    myText.addEventListener("input", checkCodeLength)
+
+    function checkCodeLength(){
+        var entereCodeLength = myText.value.length;
+        var maxLength = 80;
+
+        if (entereCodeLength > maxLength){
+            ewarning.hidden = false
+            myText.classList.add("error")
+            ewarning.style.color = "#ff0000";
+        } else{
+            ewarning.hidden = true
+            myText.classList.remove("error")
+        }
+    }
+
 
 
 });
