@@ -722,13 +722,14 @@ ol {
     /* box-shadow: 0 3ox 20px rgba(0, 0, 0, 0.1); */
     border-radius: 8px;
     background:rgb(62, 148, 228);
-    -webkit-transition: all 500ms;
-    transition: all 500ms;
+    -webkit-transition: all 1s;
+    transition: all 1s;
 }
 
 .dream-btn:hover {
     background-position: right center;
     color: #fff;
+    box-shadow: 1px 1px 8px 2px #21d397;
 }
 .dream-btn.green-btn {
     background:rgb(32, 190, 173);
@@ -4504,7 +4505,7 @@ label{
     .add-blk .fa-plus{
         float: right;
         font-size: 29px;
-        color:rgb(32, 190, 173);
+        color:#20bead;
         margin-right: 4px;
     }
     .add-blk span{
@@ -4552,7 +4553,7 @@ label{
         color: rgb(255, 255, 255);
         background-color: rgb(32, 190, 173);
         
-        box-shadow: 2px 2px 12px 4px rgb(181, 182, 182);
+        box-shadow: 1px 1px 8px 2px #20bead;
         cursor: pointer;
     }
     .btn-sub:active{
