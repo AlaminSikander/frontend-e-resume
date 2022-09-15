@@ -81,6 +81,10 @@ $(document).ready(function () {
         $('.all-skills').append('<div class="add-border"></div><div class="new-skills"><label>Skill</label> <select required name="class" class="form-control select"><option>Select one</option><option>Web analytics</option><option>SEO/SEM</option><option>HTML & CSS</option><option>Wordpress</option><option>Email marketing</option><option>Web scraping</option><option>Data visualization & pattern-finding through critical thinking</option><option>Search Engine and Keyword Optimization</option><option>Project/campaign management</option><option>Social media and mobile marketing </option><option>Paid social media advertisements</option><option>The 4 P-s of Marketing</option><option>Consumer Behavior Drivers</option><option>Brand management</option><option>Creativity</option><option>Copywriting</option><option>Copywriting</option><option>CMS Tools</option></select></div>');
 
     });
+    $('.add-langs').on('click', function () {
+        $('.all-langs').append('<div class="add-border"></div><div class="new-langs"><label>Languages</label> <select required name="class" class="form-control select"><option>Select one</option><option>English</option><option>Bangla</option><option>Hinde</option></select></div>');
+
+    });
     // Add Reference block
 
     $('#add-ref').on('click', function () {

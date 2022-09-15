@@ -4431,9 +4431,7 @@ body.light-version {
 .form-control:hover{
     border: 1px solid rgb(32, 190, 173);
 }
-.form-control:focus{
-    outline-style: dashed;
-}
+
 
 
 .topnote{
@@ -4465,7 +4463,7 @@ body.light-version {
 
 label{
         margin-top: 14px;
-        margin-bottom: 0px;
+        margin-bottom: 5px;
     }  
     hr{border-width: 2px; margin: 42px 0;}
     .fa-plus-circle{
